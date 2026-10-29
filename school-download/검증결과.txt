@@ -1,36 +1,7 @@
-학교용 완성 ZIP 실제 재다운로드 검증
-검증일: 2026-10-29 (한국)
-다운로드 주소: https://github.com/ysw1104-Hub/iTshirt03/raw/refs/heads/school-download-20261029/school-download/SW-Git-Complete-20261029.zip
-SHA256: 3BC3C23E4E4BC526E9984BDE49DC6F6EE5863A153DEDDC8F539008A1768DCDCB
-게시 ZIP과 재다운로드 ZIP 해시 일치: 통과
-복원 HEAD와 GitHub main 일치: 9448a20aab9e3da310cd601e5da2607df46cfb60
-Git 전체 객체 무결성: 두 저장소 모두 통과
-실제 화면 캡처: 13 장
-
-SW응용 실습 결과 읽기 전용 확인
-검사 위치: [GitHub에서 다시 내려받아 새로 압축을 푼 폴더]
-
-[통과] Git 실행 파일을 찾을 수 있음
-[통과] iTshirt-cat: .git 이력 폴더 존재
-[통과] iTshirt-cat: README.txt 존재
-[통과] iTshirt-cat: tshirt-list.md 존재
-[통과] iTshirt-cat: feature-list.md 존재
-[통과] iTshirt-cat: HEAD 커밋 확인
-       HEAD: 9448a20aab9e3da310cd601e5da2607df46cfb60
-[통과] iTshirt-cat: 미반영 변경 및 미추적 파일 없음
-[통과] iTshirt-cat: HEAD 이력에 커밋이 4개 이상
-[통과] iTshirt-cat: 로컬 main이 HEAD와 같은 커밋을 가리킴
-[통과] iTshirt-oct: .git 이력 폴더 존재
-[통과] iTshirt-oct: README.txt 존재
-[통과] iTshirt-oct: tshirt-list.md 존재
-[통과] iTshirt-oct: feature-list.md 존재
-[통과] iTshirt-oct: HEAD 커밋 확인
-       HEAD: 9448a20aab9e3da310cd601e5da2607df46cfb60
-[통과] iTshirt-oct: 미반영 변경 및 미추적 파일 없음
-[통과] iTshirt-oct: HEAD 이력에 커밋이 4개 이상
-[통과] iTshirt-oct: 로컬 main이 HEAD와 같은 커밋을 가리킴
-[통과] 두 로컬 저장소의 HEAD가 같음
-
-검사 결과: 통과 18개 / 실패 0개 / 전체 18개
-이 검사는 로컬 파일과 Git 상태만 확인합니다. GUI 조작 수행 여부나 온라인 원격 상태를 판정하지 않습니다.
-요청된 로컬 실습 결과 확인 항목이 모두 통과했습니다.
+학교용 패키지 r2 갱신
+기준 main: 787ebd63e28b2a44a5c9e335c11d1c9986a4864a
+한국어 메뉴 재시작 및 Light+ 적용 캡처 포함: 15 장
+검사: native Git·파일 읽기 전용 18/18, fsck 통과
+SHA256: 8c90bbd59df94eb7fa0d67c8d218ff979260a7658d8cf6722161babd5fab59fc
+PAT 발급 실습은 사용자 확인 대기이며 OAuth 완료와 구분하여 문서에 표기함.
+실제 게시 ZIP 재다운로드 검증은 다음 기록에서 확인.
