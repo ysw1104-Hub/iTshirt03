@@ -1,0 +1,24 @@
+학교 PC에서 VS Code 한국어·밝은 테마 적용하기
+
+GitHub clone이나 학교용 ZIP으로 실습 파일과 커밋을 가져와도, VS Code 확장 프로그램과
+표시 언어·색 테마 같은 PC별 사용자 설정은 자동으로 옮겨지지 않는다. 학교 PC에서 확인한다.
+
+1. VS Code를 실행하고 Ctrl+Shift+X로 확장 프로그램 화면을 연다.
+2. Korean Language Pack for Visual Studio Code를 검색한다.
+   게시자가 Microsoft이고 확장 ID가 MS-CEINTL.vscode-language-pack-ko인 공식 확장을 설치한다.
+3. Ctrl+Shift+P를 누르고 Configure Display Language를 실행한다.
+   한국어(ko)를 선택한다. 저장하지 않은 문서가 있다면 저장하고 안내에 따라 VS Code를 재시작한다.
+   이미 한국어라면 명령 이름이 '표시 언어 구성'으로 보일 수 있다.
+4. 재시작 뒤 파일·편집·보기 등 메뉴가 한국어로 표시되는지 확인한다.
+5. Ctrl+K를 누른 뒤 Ctrl+T를 눌러 색 테마 선택을 연다.
+   또는 톱니바퀴 관리 메뉴의 테마/색 테마에서 연다. Light+를 선택한다.
+   버전에 따라 '밝게+ (기본 밝게)' 또는 'Light+ (default light)'로 표시될 수 있다.
+6. 실습 폴더 iTshirt-cat을 열고 편집기 배경이 밝은색인지 확인한다.
+   README.txt, tshirt-list.md, feature-list.md가 보이면 실습 파일도 정상적으로 연 것이다.
+
+현재 작업 PC에서 확인한 내용
+- Microsoft 한국어 확장 설치, 표시 언어 ko 선택, 재시작, Light+ 테마 적용 완료.
+- 화면확인/14_VSCode_한국어적용.jpg: 한국어 표시 적용 후 실제 화면.
+- 화면확인/15_VSCode_한국어_LightPlus.jpg: 한국어와 밝은 테마를 함께 적용한 실제 화면.
+
+이 설정은 편집 화면을 맞추는 절차다. 저장소의 파일 내용이나 Git 커밋 이력은 바꾸지 않는다.

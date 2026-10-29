@@ -2,6 +2,8 @@
 
 교재의 Git/GitHub 실습 파일, 커밋 이력, SourceTree GUI 조작 기록을 모은 저장소입니다.
 
+현재 Git·SourceTree GUI 실습과 VS Code 한국어·Light+ 적용은 완료했습니다. **교재의 PAT 직접 발급 절차는 OAuth 로그인과 별개이며, 사용자 발급 확인을 기다리고 있습니다.**
+
 ## 학교에서 완성된 결과 받기
 
 **[학교용 완성 ZIP 다운로드](https://github.com/ysw1104-Hub/iTshirt03/raw/refs/heads/school-download-20261029/school-download/SW-Git-Complete-20261029.zip)**
@@ -41,6 +43,8 @@ git clone https://github.com/ysw1104-Hub/iTshirt03.git iTshirt-school
 마지막 GUI 실습은 기능 목록을 먼저 스테이징하고 티셔츠 목록도 추가한 뒤 커밋했습니다. Push 후 `main`과 `origin/main`이 같은 커밋을 가리키는 것을 확인했습니다. 네 번째 커밋까지의 이력도 그대로 보존했습니다.
 
 GitHub OAuth 본인 인증도 완료했고, SourceTree의 **Remote**에서 `ysw1104-Hub` 계정과 `iTshirt03` 저장소가 표시되는 것을 확인했습니다. 실제 인증 성공 및 원격 목록 화면은 캡처 12~13번에 보관했습니다.
+
+Microsoft 한국어 확장을 설치하고 표시 언어 `ko`로 재시작했습니다. 교재처럼 **밝게+(Light+)** 테마도 적용했으며, 실제 화면은 캡처 14~15번입니다. 학교 PC의 적용 순서는 [VS Code 환경 설정 안내](실습자료/VSCode_환경설정.txt)에 있습니다.
 
 - [실습 실행 기록](실습자료/실습기록.txt)
 - [최종 확인 결과](실습자료/실습결과_확인.txt)

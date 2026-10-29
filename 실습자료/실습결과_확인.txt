@@ -2,6 +2,9 @@ SW응용 Git·GitHub 실습 결과
 확인 날짜: 2026-10-29 (한국)
 원격 저장소: https://github.com/ysw1104-Hub/iTshirt03
 
+현재 상태
+Git 실습·SourceTree GUI·한국어·Light+ 설정은 완료. PAT 발급 실습은 사용자 확인 대기.
+
 완료한 실습
 - 기존 GitHub 계정, 설치된 Git·VS Code를 재사용했다.
 - iTshirt-cat 초기화, README.txt 생성·수정, 첫 커밋과 두 번째 커밋을 기록했다.
@@ -11,6 +14,8 @@ SW응용 Git·GitHub 실습 결과
 - iTshirt-cat에서 pull하여 다른 폴더의 변경을 받았다.
 - 티셔츠 목록·기능 목록을 추가한 핵심 네 번째 커밋을 보존했다.
 - VS Code에서 두 목록의 제목·빈 줄을 실제 편집하고 저장했다.
+- Microsoft Korean Language Pack 설치, 표시 언어 ko 적용 및 재시작을 확인했다.
+- 교재의 밝게+(Light+) 테마를 실제 선택하고 흰색 화면을 확인했다.
 - SourceTree Add로 기존 cat 저장소를 등록하고 History를 확인했다.
 - SourceTree에서 feature-list.md만 먼저 스테이징하고 tshirt-list.md도 추가했다.
 - 커밋 메시지를 작성하고 GUI의 커밋 버튼으로 추가 커밋을 만들었다.
@@ -39,6 +44,11 @@ README.txt / tshirt-list.md / feature-list.md는 교재의 기본 실습 파일�
 화면확인/10: origin/main으로 Push하는 대화상자
 화면확인/11: Push 후 main과 origin/main이 같은 최신 커밋을 가리키는 상태
 화면확인/12~13: GitHub OAuth 인증 성공 및 Remote 계정·저장소 목록
+화면확인/14~15: 한국어 표시 언어 적용·재시작 및 Light+ 테마
+
+PAT 발급 실습
+OAuth 로그인과 PAT 발급은 별도 절차다. 새 PAT 발급 자체는 아직 사용자 확인 대기다.
+생성된 토큰 값은 기록·저장소·배포 ZIP에 포함하지 않는다.
 
 학교에서 받는 결과
 학교용 완성 ZIP에는 cat·oct의 .git 이력, 실습 파일, 이 기록, 핵심 정리,

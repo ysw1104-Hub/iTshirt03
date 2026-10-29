@@ -157,3 +157,12 @@ SourceTree에서 인증 성공 및 ysw1104-Hub의 GitHub Remote 계정 등록을
 SourceTree Remote에서 개인 저장소 필터로 iTshirt03이 표시되는 것까지 확인했다.
 화면확인/12는 인증 성공, /13은 해당 과제 저장소만 검색한 Remote 목록이다.
 교재의 계정 연결과 GUI 실습 확인 항목이 모두 해소되었다.
+
+한국어·테마 누락 정정 및 수행 기록
+처음에는 한국어 확장과 테마를 선택 설정으로 보고 생략했으나, 교재가 해당 환경을 기준으로 설명하므로 이 판단을 정정했다.
+Microsoft Korean Language Pack(ms-ceintl.vscode-language-pack-ko) 설치 성공.
+Configure Display Language에서 한국어(ko)를 선택하고 VS Code를 재시작했다.
+사용자 argv.json의 locale=ko와 실제 한국어 메뉴를 확인했다.
+색 테마에서 Light+를 선택하고 사용자 설정 workbench.colorTheme=Light+ 및 흰색 화면을 확인했다.
+화면확인14~15에 실제 결과를 저장했다.
+PAT 발급과 OAuth 인증 성공은 서로 다른 절차이며 PAT 발급 실습 자체는 사용자 확인을 기다리는 상태다.

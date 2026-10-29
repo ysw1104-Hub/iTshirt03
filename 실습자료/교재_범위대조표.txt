@@ -10,10 +10,12 @@ B01~B04 = 같은 이름 끝의 _01.jpg~_04.jpg (총 5장)
 쪽수 일부는 사진 밖이어서 본문 상호참조와 연속 사진 순서로 대응했다.
 사진은 교재 실습·설명이며 교수님의 별도 제출 양식·채점표는 포함하지 않는다.
 
-1. A00~A02 / 6~11쪽 / GitHub 가입·PAT와 전체 흐름 [기존 환경으로 충족]
+1. A00~A02 / 6~11쪽 / GitHub 가입·PAT와 전체 흐름 [가입·OAuth 완료 / PAT 발급 확인 대기]
    기존 GitHub 계정과 수업용 iTshirt03 저장소를 사용했다. 새 계정을 만들지 않았다.
-   GCM·브라우저 인증으로 실제 push에 성공했으므로 PAT 발급을 반복하지 않았다.
-   교재의 인증 방법 소개와 실제 제출할 실습 산출물을 구분했다.
+   GCM·브라우저 인증으로 실제 Git push를 완료했고 SourceTree의 GitHub OAuth 연결도 완료했다.
+   OAuth 연결은 PAT를 직접 발급하는 실습과 다르다. PAT 발급 실습은 사용자 확인 대기다.
+   본인이 새 PAT를 발급했거나 기존 PAT 발급 이력을 확인하기 전에는 이 항목을 완료로 표시하지 않는다.
+   토큰 문자열은 채팅·문서·화면 캡처·학교용 파일에 기록하지 않는다.
 
 2. A03~A05 / 12~17쪽 / Git 설치·실행, 작업 폴더 준비 [완료]
    설치된 Windows Git/Git Bash를 확인하고 재사용했다. cat·oct 실습 폴더를 준비했다.
@@ -43,9 +45,12 @@ B01~B04 = 같은 이름 끝의 _01.jpg~_04.jpg (총 5장)
    Local·Remote·Clone·Add·Create의 역할을 대조했다.
    Add와 History 등 주 실습에 필요한 화면은 정상 실행 후 실제로 조작했다.
 
-9. A18~A19 / 48~51쪽 / VS Code 설치·화면·언어·테마 [기존 환경으로 충족]
+9. A18~A19 / 48~51쪽 / VS Code 설치·화면·언어·테마 [완료]
    설치된 VS Code를 재사용하고 실습 폴더와 파일을 실제로 열었다.
-   한국어 확장·색 테마 변경은 환경과 취향에 따른 참고 설정이다.
+   Microsoft 공식 한국어 확장 ms-ceintl.vscode-language-pack-ko@1.131.2026090407을 설치했다.
+   GUI의 Configure Display Language에서 ko를 선택하고 재시작하여 한국어 표시를 확인했다.
+   GUI에서 Light+를 선택하여 교재처럼 밝은 배경을 적용했다. 표시 언어와 테마 저장도 확인했다.
+   실제 적용 화면은 화면확인 14·15번이다. 학교 PC 재설정 절차는 VSCode_환경설정.txt에 적었다.
 
 10. A20~A22 / 52~56쪽 및 장 구분 / GitHub 화면·저장소 옵션 [참고 대조]
     GitHub 메인, 공개 여부·README·.gitignore·라이선스와 프로필 활용 설명이다.
@@ -74,9 +79,13 @@ B01~B04 = 같은 이름 끝의 _01.jpg~_04.jpg (총 5장)
 핵심 4개: c94f465 사이트 설명 추가 → 78cf9c8 설명 업데이트 →
 d8d4e82 개발자 목록 추가 → dddbd43 티셔츠, 기능 리스트 추가.
 이 4개를 보존하고 GUI 실습 커밋 3dba257을 추가하여 총 5개를 기록했다.
-화면확인 01~03: VS Code 원본 파일 확인 / 04: SourceTree 기존 History /
+화면확인 폴더에는 실제 화면 캡처 15장이 있다.
+01~03: VS Code 원본 파일 확인 / 04: SourceTree 기존 History /
 05~06: VS Code 편집 / 07~08: 파일별 staging / 09: GUI commit /
-10~11: Push 대상과 완료 후 main·origin/main 일치.
+10~11: Push 대상과 완료 후 main·origin/main 일치 /
+12: SourceTree GitHub OAuth 인증 성공 / 13: Remote의 iTshirt03 목록 /
+14_VSCode_한국어적용.jpg: 표시 언어 ko 적용 후 재시작한 한국어 화면 /
+15_VSCode_한국어_LightPlus.jpg: 한국어 표시와 Light+ 밝은 테마를 함께 적용한 화면.
 
 SourceTree 첫 실행 문제와 복구 기록
 3.4.32와 3.4.31 모두 마법사의 마지막 단계 후 메인 창이 나타나지 않았다.
@@ -89,3 +98,9 @@ FirstLaunch=False / FirstLaunchSinceHgAdded=False / AutoStartSSHAgent=False.
 이후 메인 창과 실제 Add·History·staging·commit·push 동작을 확인했다.
 라이선스·EULA·계정 인증·접근 권한 설정과 Windows 보안 설정은 변경하지 않았다.
 공식 설정 파일 안내: https://support.atlassian.com/sourcetree/kb/edit-sourcetree-configurations-without-opening-the-application-windows/
+범위 해석 정정
+이전 정리에서 한국어 확장과 밝은 테마를 단순 취향 설정으로 남겨 둔 것은 교재의 실제
+환경 설정 절차를 충분히 반영하지 못한 해석이었다. 교재는 이후 설명을 한국어 기준으로 하고
+밝은 테마로 바꾸는 절차도 제시한다. 두 절차를 실제 수행·검증한 상태로 이 문서를 정정했다.
+또한 GCM·브라우저 인증 또는 SourceTree OAuth의 성공을 PAT 발급 완료와 동일하게 취급하지 않는다.
+PAT 발급 실습은 현재 사용자 확인 대기이며, 확인이 끝난 뒤 해당 항목을 별도로 갱신해야 한다.
