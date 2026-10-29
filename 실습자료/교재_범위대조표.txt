@@ -1,0 +1,91 @@
+SW응용 교재 사진 35장 범위 대조표
+작성 기준: 2026-10-29 / 실제 수행 기록과 화면 증거 기준
+원격 저장소: https://github.com/ysw1104-Hub/iTshirt03
+
+사진 표기
+A00 = KakaoTalk_20261029_183951076.jpg
+A01~A29 = 같은 이름 끝의 _01.jpg~_29.jpg (총 30장)
+B00 = KakaoTalk_20261029_183954624.jpg
+B01~B04 = 같은 이름 끝의 _01.jpg~_04.jpg (총 5장)
+쪽수 일부는 사진 밖이어서 본문 상호참조와 연속 사진 순서로 대응했다.
+사진은 교재 실습·설명이며 교수님의 별도 제출 양식·채점표는 포함하지 않는다.
+
+1. A00~A02 / 6~11쪽 / GitHub 가입·PAT와 전체 흐름 [기존 환경으로 충족]
+   기존 GitHub 계정과 수업용 iTshirt03 저장소를 사용했다. 새 계정을 만들지 않았다.
+   GCM·브라우저 인증으로 실제 push에 성공했으므로 PAT 발급을 반복하지 않았다.
+   교재의 인증 방법 소개와 실제 제출할 실습 산출물을 구분했다.
+
+2. A03~A05 / 12~17쪽 / Git 설치·실행, 작업 폴더 준비 [완료]
+   설치된 Windows Git/Git Bash를 확인하고 재사용했다. cat·oct 실습 폴더를 준비했다.
+   macOS·Linux 설치 안내는 다른 운영체제를 위한 참고 설명이다.
+
+3. A06~A08 / 18~23쪽 / README, init·add·commit·log·checkout [완료]
+   README.txt 생성, 저장소 초기화, 작성자 설정, 첫·두 번째 커밋을 실제 수행했다.
+   첫 커밋으로 checkout하여 예전 내용을 확인하고 main으로 복귀했다.
+
+4. A09~A10 / 24~27쪽 / GitHub 저장소·원격 연결·push [완료]
+   기존의 비어 있던 iTshirt03을 수업용 원격 저장소로 사용했다.
+   origin 연결, main 설정, 첫 push와 브라우저 인증을 실제 확인했다.
+
+5. A11~A13 / 28~33쪽 / clone·개발자 목록 추가·push·pull [완료]
+   iTshirt-oct로 clone, 고양이·문어 개발자 목록 추가·commit·push를 수행했다.
+   iTshirt-cat에서 pull하여 변경을 받았다. 고양이·문어는 한 계정의 두 작업 폴더 역할이다.
+
+6. A14~A15 / 40~43쪽 / SourceTree 설치·기본 설정 [완료]
+   공식 서명된 설치 파일을 검증했다. 현재 정상 실행한 버전은 3.4.31이다.
+   기존 Git과 작성자 정보를 사용했다. 첫 실행 문제와 복구 내용은 아래에 구분했다.
+
+7. A16 / 44~45쪽 / SourceTree GitHub OAuth·Remote 계정 연결 [완료]
+   사용자가 OAuth 본인 인증을 직접 완료했다. 인증 성공 및 ysw1104-Hub의 Remote 계정 등록과 iTshirt03 저장소 목록을 확인했다.
+   Git push 성공과 SourceTree OAuth 계정 연결은 서로 다른 확인 항목이다.
+
+8. A17 / 46~47쪽 / SourceTree 화면 구성 [실제 화면 확인]
+   Local·Remote·Clone·Add·Create의 역할을 대조했다.
+   Add와 History 등 주 실습에 필요한 화면은 정상 실행 후 실제로 조작했다.
+
+9. A18~A19 / 48~51쪽 / VS Code 설치·화면·언어·테마 [기존 환경으로 충족]
+   설치된 VS Code를 재사용하고 실습 폴더와 파일을 실제로 열었다.
+   한국어 확장·색 테마 변경은 환경과 취향에 따른 참고 설정이다.
+
+10. A20~A22 / 52~56쪽 및 장 구분 / GitHub 화면·저장소 옵션 [참고 대조]
+    GitHub 메인, 공개 여부·README·.gitignore·라이선스와 프로필 활용 설명이다.
+    사용 중인 저장소로 실제 파일·커밋을 확인했다. 모든 옵션을 새로 켜는 과제는 아니다.
+
+11. A23~A25 / 58~63쪽 / 기존 저장소 Add·History·.git [완료]
+    SourceTree Add로 iTshirt-cat을 등록하고 기존 핵심 커밋 4개를 History에서 확인했다.
+    .git은 로컬 이력을 담는 폴더다. Create로 새 저장소를 만드는 팁은 주 실습의 보충이다.
+
+12. A26~A27 / 64~67쪽 / 목록 파일 작성·파일 선택 스테이징 [완료]
+    tshirt-list.md와 feature-list.md의 교재 내용을 만들고 VS Code에서 실제 확인했다.
+    추가 GUI 실습에서는 두 파일의 제목·빈 줄을 편집한 뒤 SourceTree에서
+    feature-list.md를 먼저 선택하여 스테이징하고 tshirt-list.md도 추가했다.
+
+13. A28~A29 / 68~71쪽 / GUI commit·push·main과 origin/main [완료]
+    핵심 목록 추가 커밋은 보존했다. 별도 변경으로 SourceTree GUI commit·push를 수행했다.
+    추가 커밋 3dba257의 제목은 '목록 마크다운 형식 정리 (SourceTree GUI 실습)'이다.
+    push 후 main과 origin/main이 같은 최신 커밋을 가리키는 화면을 확인했다.
+
+14. B00~B04 / 72~80쪽 / 스냅샷·스테이지·파일의 네 상태 [개념 정리]
+    그림의 add→commit→push와 untracked·unmodified·modified·staged를 대조했다.
+    Git_핵심정리.txt에 개념·명령어·예상 질문을 정리했다. 이해 여부는 설명 연습으로 확인한다.
+    그림 속 README.md·app.js·app.css는 파일 상태 설명용 예시이며 별도 앱 제작 과제가 아니다.
+
+실습 이력과 증거
+핵심 4개: c94f465 사이트 설명 추가 → 78cf9c8 설명 업데이트 →
+d8d4e82 개발자 목록 추가 → dddbd43 티셔츠, 기능 리스트 추가.
+이 4개를 보존하고 GUI 실습 커밋 3dba257을 추가하여 총 5개를 기록했다.
+화면확인 01~03: VS Code 원본 파일 확인 / 04: SourceTree 기존 History /
+05~06: VS Code 편집 / 07~08: 파일별 staging / 09: GUI commit /
+10~11: Push 대상과 완료 후 main·origin/main 일치.
+
+SourceTree 첫 실행 문제와 복구 기록
+3.4.32와 3.4.31 모두 마법사의 마지막 단계 후 메인 창이 나타나지 않았다.
+따라서 버전만 낮춰 문제가 해결됐다고 판단하지 않는다. .NET 4.8 요구는 충족했다.
+로그에 소유 창이 없다는 알림 오류가 있었으나, 이는 원인 자체를 확정하는 예외가 아니었다.
+마법사를 실제 완료한 상태에서 user.config를 먼저 백업하고 다음 일반 설정을 복구했다.
+FirstLaunch=False / FirstLaunchSinceHgAdded=False / AutoStartSSHAgent=False.
+앞의 두 값은 마법사 반환 후 지정되고 SSH 질문 처리 뒤 저장되는 진행 상태다.
+마지막 값은 HTTPS를 사용하는 이 실습에서 선택적 SSH 에이전트 자동 시작을 끈다.
+이후 메인 창과 실제 Add·History·staging·commit·push 동작을 확인했다.
+라이선스·EULA·계정 인증·접근 권한 설정과 Windows 보안 설정은 변경하지 않았다.
+공식 설정 파일 안내: https://support.atlassian.com/sourcetree/kb/edit-sourcetree-configurations-without-opening-the-application-windows/

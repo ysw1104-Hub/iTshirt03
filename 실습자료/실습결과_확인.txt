@@ -1,0 +1,57 @@
+SW응용 Git·GitHub 실습 결과
+확인 날짜: 2026-10-29 (한국)
+원격 저장소: https://github.com/ysw1104-Hub/iTshirt03
+
+완료한 실습
+- 기존 GitHub 계정, 설치된 Git·VS Code를 재사용했다.
+- iTshirt-cat 초기화, README.txt 생성·수정, 첫 커밋과 두 번째 커밋을 기록했다.
+- 첫 번째 커밋으로 checkout하여 이전 내용을 확인하고 main으로 복귀했다.
+- 기존 수업용 iTshirt03 원격 저장소에 push했다.
+- iTshirt-oct로 clone한 뒤 개발자 목록을 추가·commit·push했다.
+- iTshirt-cat에서 pull하여 다른 폴더의 변경을 받았다.
+- 티셔츠 목록·기능 목록을 추가한 핵심 네 번째 커밋을 보존했다.
+- VS Code에서 두 목록의 제목·빈 줄을 실제 편집하고 저장했다.
+- SourceTree Add로 기존 cat 저장소를 등록하고 History를 확인했다.
+- SourceTree에서 feature-list.md만 먼저 스테이징하고 tshirt-list.md도 추가했다.
+- 커밋 메시지를 작성하고 GUI의 커밋 버튼으로 추가 커밋을 만들었다.
+- GUI의 Push 버튼으로 GitHub에 올리고 main·origin/main이 같은 커밋에 있는지 확인했다.
+- oct에서도 최신 main을 pull하여 두 실습 폴더를 동기화했다.
+
+핵심 이력 (과거 → 최신)
+c94f465  사이트 설명 추가
+78cf9c8  설명 업데이트
+d8d4e82  개발자 목록 추가
+dddbd43  티셔츠, 기능 리스트 추가
+3dba257  목록 마크다운 형식 정리 (SourceTree GUI 실습)
+이후의 자료 정리·학교용 배포 커밋은 실습 산출물의 전달을 위한 것이다.
+
+SourceTree OAuth 계정 연결
+사용자가 GitHub OAuth 인증을 직접 완료했고, 인증 성공 상태 및 ysw1104-Hub의 SourceTree Remote 계정 등록과 iTshirt03 저장소 목록을 확인했다.
+
+파일과 화면 증거
+README.txt / tshirt-list.md / feature-list.md는 교재의 기본 실습 파일이다.
+화면확인/01~03: VS Code에서 원본 파일 확인
+화면확인/04: SourceTree에 등록한 저장소의 기존 이력
+화면확인/05~06: VS Code에서 실제 목록 편집·저장
+화면확인/07: 기능 목록만 먼저 스테이징한 상태
+화면확인/08: 두 파일 스테이징 및 커밋 메시지
+화면확인/09: GUI 커밋 후 main이 origin/main보다 앞선 상태
+화면확인/10: origin/main으로 Push하는 대화상자
+화면확인/11: Push 후 main과 origin/main이 같은 최신 커밋을 가리키는 상태
+화면확인/12~13: GitHub OAuth 인증 성공 및 Remote 계정·저장소 목록
+
+학교에서 받는 결과
+학교용 완성 ZIP에는 cat·oct의 .git 이력, 실습 파일, 이 기록, 핵심 정리,
+교재 사진 대조표, 실제 화면, 학교에서_확인.ps1을 포함한다.
+일반 GitHub Download ZIP과 구분하여 README의 학교용 ZIP 링크를 사용한다.
+학교 PC에서 SourceTree의 Add로 새 폴더를 등록하고 계정에 로그인하는 것은
+그 PC의 환경 설정이며, 파일과 커밋을 처음부터 다시 만드는 과제가 아니다.
+
+SourceTree 실행 복구
+현재 정상 작동을 확인한 버전은 공식 서명된 3.4.31이다.
+마법사를 실제 완료한 뒤 저장되지 않은 진행 상태를 백업 후 복구하고,
+HTTPS 실습에 필요하지 않은 SSH 에이전트 자동 시작을 해제했다.
+이후 Add·History·스테이징·커밋·Push의 실제 동작을 검증했다.
+
+교수님의 별도 제출 양식은 교재 사진에 포함되어 있지 않다.
+고양이·문어는 한 사용자가 두 폴더에서 맡은 교재의 실습 역할이다.

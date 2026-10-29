@@ -1,0 +1,28 @@
+학교에서 GitHub 실습 결과 받기
+
+저장소: https://github.com/ysw1104-Hub/iTshirt03
+
+방법 1. 학교용 완성 ZIP 받기
+완성 ZIP 다운로드:
+https://github.com/ysw1104-Hub/iTshirt03/raw/refs/heads/school-download-20261029/school-download/SW-Git-Complete-20261029.zip
+
+위 ZIP을 내려받아 폴더 전체를 압축 해제한다. 과제 파일, 두 로컬 저장소의 .git 이력, 핵심정리, 실제 실행 기록, 화면 증거, 확인 스크립트가 함께 들어 있는 완성 결과물이다. GitHub의 Code > Download ZIP으로 받는 일반 소스 ZIP과 구별한다.
+
+압축 해제 후 학교에서_확인.ps1과 두 실습 폴더가 같은 위치에 있어야 한다.
+VS Code에서는 iTshirt-cat 폴더를 열어 README.txt, tshirt-list.md, feature-list.md를 확인한다.
+SourceTree에서는 Add에서 학교 PC에 압축을 푼 iTshirt-cat 폴더를 선택한다. 컴퓨터마다 폴더 경로가 달라 기존 PC의 SourceTree 등록 경로를 그대로 사용할 수 없다. 학교 PC의 프로그램 설치, 본인 계정 로그인, Add로 새 경로 등록은 전달받은 결과를 그 PC에서 열기 위한 환경 설정이다. 과제 파일과 커밋을 다시 만드는 단계가 아니다. SourceTree의 실제 staging·commit·push·History 확인 화면은 패키지의 화면 증거와 결과 문서에서 확인할 수 있다.
+
+로컬 결과를 검사하려면 해당 폴더에서 PowerShell을 열고 다음 명령을 실행한다.
+powershell.exe -NoProfile -File .\학교에서_확인.ps1
+Git 실행 파일이 있어야 커밋·작업 상태 검사를 할 수 있다. 검사 스크립트는 파일·설정·원격을 변경하지 않는다. 스크립트를 실행할 수 없다면 각 실습 폴더에서 다음 명령으로 작업 상태와 커밋 이력을 직접 확인한다.
+git status --short --branch
+git log --oneline --decorate
+
+방법 2. Git으로 새 로컬 저장소 받기
+Git이 설치되어 있으면 원하는 작업 폴더에서 다음 명령을 실행할 수 있다.
+git clone https://github.com/ysw1104-Hub/iTshirt03.git iTshirt-school
+
+clone은 원격 main의 파일과 커밋 이력을 새 iTshirt-school 폴더로 받는다. 학교용 ZIP의 cat·oct 두 폴더를 그대로 복원하는 방식과는 다르므로, 두 폴더와 기록·증거를 한 번에 받으려면 별도 완성 ZIP을 선택한다.
+
+이력 보존 주의
+GitHub 일반 Download ZIP에는 .git이 없어서 Git 이력을 바로 볼 수 없다. 별도 학교용 완성 ZIP의 .git 폴더는 숨김 폴더일 수 있으며 삭제하지 않는다. 저장소를 여는 SourceTree·VS Code·Git의 설치 여부는 학교 PC 환경 조건이다.

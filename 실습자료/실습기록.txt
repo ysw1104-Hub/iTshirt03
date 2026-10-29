@@ -1,0 +1,159 @@
+SW응용 Git 실습 실행 기록
+실행 날짜: 2026-10-29 (한국)
+기존 원격 저장소: https://github.com/ysw1104-Hub/iTshirt03
+실습은 현재 날짜로 실행했으며 과거 수업 기록을 소급 작성하지 않았습니다.
+
+
+[iTshirt-cat] git init -b main
+Initialized empty Git repository in C:/Users/seonw/Documents/Codex/2026-10-29/new-chat/outputs/sw응용_실습/iTshirt-cat/.git/
+
+[iTshirt-cat] git config user.name ysw1104-Hub
+
+[iTshirt-cat] git config user.email seonwoong1104@gmail.com
+
+[iTshirt-cat] git status --short
+?? README.txt
+
+[iTshirt-cat] git add README.txt
+warning: in the working copy of 'README.txt', LF will be replaced by CRLF the next time Git touches it
+
+[iTshirt-cat] git commit -m 사이트 설명 추가
+[main (root-commit) c94f465] 사이트 설명 추가
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+
+[iTshirt-cat] git add README.txt
+warning: in the working copy of 'README.txt', LF will be replaced by CRLF the next time Git touches it
+
+[iTshirt-cat] git commit -m 설명 업데이트
+[main 78cf9c8] 설명 업데이트
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[iTshirt-cat] git --no-pager log --oneline
+78cf9c8 설명 업데이트
+c94f465 사이트 설명 추가
+
+[iTshirt-cat] git checkout c94f465cb42205f3e4b8f433aec35f9d04deb260
+Note: switching to 'c94f465cb42205f3e4b8f433aec35f9d04deb260'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at c94f465 사이트 설명 추가
+첫 번째 커밋의 README: 개발자 티셔츠 쇼핑몰 오픈 소스
+
+[iTshirt-cat] git checkout -
+Previous HEAD position was c94f465 사이트 설명 추가
+Switched to branch 'main'
+복귀한 README: 개발자 티셔츠 쇼핑몰 오픈 소스 짱
+
+[iTshirt-cat] git remote add origin https://github.com/ysw1104-Hub/iTshirt03.git
+
+[iTshirt-cat] git push -u origin main
+To https://github.com/ysw1104-Hub/iTshirt03.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+[sw응용_실습] git clone https://github.com/ysw1104-Hub/iTshirt03.git iTshirt-oct
+Cloning into 'iTshirt-oct'...
+
+[iTshirt-oct] git config user.name ysw1104-Hub
+
+[iTshirt-oct] git config user.email seonwoong1104@gmail.com
+
+[iTshirt-oct] git add README.txt
+warning: in the working copy of 'README.txt', LF will be replaced by CRLF the next time Git touches it
+
+[iTshirt-oct] git commit -m 개발자 목록 추가
+[main d8d4e82] 개발자 목록 추가
+ 1 file changed, 4 insertions(+)
+
+[iTshirt-oct] git push origin main
+To https://github.com/ysw1104-Hub/iTshirt03.git
+   78cf9c8..d8d4e82  main -> main
+
+[iTshirt-cat] git pull --ff-only origin main
+From https://github.com/ysw1104-Hub/iTshirt03
+ * branch            main       -> FETCH_HEAD
+   78cf9c8..d8d4e82  main       -> origin/main
+Updating 78cf9c8..d8d4e82
+Fast-forward
+ README.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+동기화된 README: 개발자 티셔츠 쇼핑몰 오픈 소스 짱
+
+개발자 목록
+1. 고양이
+2. 문어
+
+
+[iTshirt-cat] git status --short --branch
+## main...origin/main
+
+Git CLI 실습 완료. 다음 단계: SourceTree에서 기존 로컬 저장소 추가 후 두 목록 파일을 커밋하고 푸시.
+
+마지막 두 목록 파일은 SourceTree 첫 실행 문제로 Git 명령으로 스테이징했습니다.
+[iTshirt-cat] git add feature-list.md tshirt-list.md
+warning: in the working copy of 'feature-list.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tshirt-list.md', LF will be replaced by CRLF the next time Git touches it
+[iTshirt-cat] git commit -m 티셔츠, 기능 리스트 추가
+[main dddbd43] 티셔츠, 기능 리스트 추가
+ 2 files changed, 5 insertions(+)
+ create mode 100644 feature-list.md
+ create mode 100644 tshirt-list.md
+
+[iTshirt-cat] git push origin main
+To https://github.com/ysw1104-Hub/iTshirt03.git
+   d8d4e82..dddbd43  main -> main
+
+[iTshirt-oct] git pull --ff-only origin main
+From https://github.com/ysw1104-Hub/iTshirt03
+ * branch            main       -> FETCH_HEAD
+   d8d4e82..dddbd43  main       -> origin/main
+Updating d8d4e82..dddbd43
+Fast-forward
+ feature-list.md | 3 +++
+ tshirt-list.md  | 2 ++
+ 2 files changed, 5 insertions(+)
+ create mode 100644 feature-list.md
+ create mode 100644 tshirt-list.md
+
+최종 검증
+cat HEAD: dddbd43419f1fefe5ef2e54d818b0c0fbecff1da
+oct HEAD: dddbd43419f1fefe5ef2e54d818b0c0fbecff1da
+GitHub main: dddbd43419f1fefe5ef2e54d818b0c0fbecff1da
+두 작업 폴더의 미반영 변경: 없음
+VS Code에서 세 파일 확인 및 실제 화면 캡처 완료.
+SourceTree GUI 조작은 첫 실행 문제로 미완료. 자세한 내용은 실습결과_확인.txt 참고.
+
+추가 GUI 실습 완료 기록
+SourceTree 정상 실행 복구 후 다음 동작을 실제 GUI로 수행했다.
+1. Add로 iTshirt-cat 등록, 핵심 커밋 4개 History 확인.
+2. VS Code에서 feature-list.md의 제목 다음 빈 줄 추가, tshirt-list.md 제목 추가 및 저장.
+3. SourceTree에서 기능 목록만 먼저 stage한 뒤 티셔츠 목록도 stage.
+4. 메시지 입력 및 커밋 버튼 클릭: 3dba257 목록 마크다운 형식 정리 (SourceTree GUI 실습).
+5. Push 대화상자에서 origin, main→main 확인 후 Push.
+6. main과 origin/main이 3dba257을 함께 가리키는 것을 History에서 확인.
+7. 별도 git ls-remote로 GitHub main=3dba257f78846d755cc21187c729974845a6eb96 검증.
+8. iTshirt-oct pull 완료. 화면 증거04~11 참조.
+앞선 1차 기록의 GUI 미완료 상태는 이 추가 실습으로 해소했다.
+SourceTree OAuth 계정 연결은 사용자 직접 인증 후 추가 확인 예정.
+최종 계정 연결 확인: 사용자가 GitHub OAuth 본인 인증을 직접 완료했다.
+SourceTree에서 인증 성공 및 ysw1104-Hub의 GitHub Remote 계정 등록을 확인했다.
+앞선 OAuth 확인 예정 상태는 해소되었다.
+
+SourceTree Remote에서 개인 저장소 필터로 iTshirt03이 표시되는 것까지 확인했다.
+화면확인/12는 인증 성공, /13은 해당 과제 저장소만 검색한 Remote 목록이다.
+교재의 계정 연결과 GUI 실습 확인 항목이 모두 해소되었다.
