@@ -1,8 +1,7 @@
-﻿학교용 ZIP r4 배포 기준
-기준 main: 252133e1627dffcc5bc8736f3eb7defc9e1f28e2
-SHA256: 40445e3447e50449ef2258aceaafcac754bc57a48b8e4fdb714ec9923618acbe
-새 PAT: 2026-10-30 사용자 직접 발급 완료 확인. 실제 토큰 설정·값은 수집하지 않았음.
-이전 PAT의 만료와 새 발급을 구분하며 실제 Git·SourceTree 연결은 OAuth로 완료.
-두 저장소 native Git·파일 검사: 18/18 통과 / fsck 통과
-실제 화면 캡처: 15장
-계정 설정 화면 원본과 토큰 값은 포함하지 않음.
+﻿iTshirt03 배포 정보
+기준 main: cf99f90e46c42cdb74d87b42fda4df4108d1fb93
+파일: README.txt, feature-list.md, tshirt-list.md
+각 저장소 커밋: 5개
+cat·oct Git 이력 포함
+SHA256: b4337937a03e444705a52885fa1f6b176c0841f333c88445275bcc15a903dea9
+이전 수행 기록과 캡처는 이전 배포본에 보관되어 있다.
