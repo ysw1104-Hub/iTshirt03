@@ -1,40 +1,38 @@
-학교용 완성 ZIP 재다운로드 검증 결과 r4
-검증일: 2026-10-30 (한국)
+학교용 실습 ZIP 최종 확인
+확인일: 2026-10-30 (한국)
 
-GitHub에 게시된 최종 ZIP을 새 폴더로 실제 내려받아 압축을 해제한 뒤 검사했다.
-기존 로컬 ZIP이나 기존 실습 폴더를 대신 검사한 결과가 아니다.
+아래 게시 파일을 새 폴더에 실제 내려받아 압축을 해제한 뒤 확인했다.
+https://github.com/ysw1104-Hub/iTshirt03/raw/f15ef9b30fdac5656ad86832b72ca34e166cce61/school-download/iTshirt03.zip
 
-실제 다운로드 URL (게시 커밋 고정)
-https://github.com/ysw1104-Hub/iTshirt03/raw/33a62b5728033cbc294e3aa535839cfd6063227c/school-download/SW-Git-Complete-20261029.zip
-
-파일 크기: 3,895,740바이트
+파일 크기: 44,892바이트
 SHA-256:
-40445e3447e50449ef2258aceaafcac754bc57a48b8e4fdb714ec9923618acbe
-배포 기준 해시와 일치: 통과
+b4337937a03e444705a52885fa1f6b176c0841f333c88445275bcc15a903dea9
+배포 기준 해시와 일치한다.
 
-재다운로드본 검사: 18개 통과 / 0개 실패
-- Git 실행 파일 확인.
-- cat·oct 각각 .git 폴더 및 README.txt·tshirt-list.md·feature-list.md 존재.
-- 두 저장소의 HEAD가 배포 기준 커밋과 일치.
-- 두 저장소 모두 미반영 변경·미추적 파일 없음.
-- 두 저장소 각각 커밋 9개 확인.
-- 로컬 main이 각 HEAD와 일치하고 두 HEAD도 서로 일치.
+압축 내용
+iTshirt03/iTshirt-cat/   .git 및 교재 파일 3개
+iTshirt03/iTshirt-oct/   .git 및 교재 파일 3개
+iTshirt03/사용방법.txt
 
-두 저장소의 실제 HEAD
-252133e1627dffcc5bc8736f3eb7defc9e1f28e2
+두 저장소의 교재 파일
+README.txt
+feature-list.md
+tshirt-list.md
 
-Git 무결성 확인
-iTshirt-cat: git fsck --full 종료 코드 0, 오류 출력 없음.
-iTshirt-oct: git fsck --full 종료 코드 0, 오류 출력 없음.
+검증 결과: 18개 통과 / 0개 실패
+- 두 저장소 모두 커밋 5개이며 로컬 main과 HEAD가 일치한다.
+- 두 저장소의 HEAD: cf99f90e46c42cdb74d87b42fda4df4108d1fb93
+- 두 저장소 모두 추적 파일과 실제 작업 파일이 위 3개이며 .git 이력이 포함된다.
+- 미반영 변경·미추적 파일 없음(clean).
+- git fsck --full: 두 저장소 모두 종료 코드 0, 오류 출력 없음.
+- 처음 4개 실습 커밋은 기존 기록과 전체 커밋 ID가 동일하다.
 
-동봉 자료 확인
-- 실제 화면 캡처 15장 포함. 한국어 적용 화면 14번, 한국어·Light+ 화면 15번 포함.
-- README, 실습결과, 교재 대조표에서 새 PAT의 사용자 직접 발급 완료 확인을 기록함.
-- 새 PAT의 완료 근거는 2026-10-30 사용자의 명시적 완료 확인이다.
-- 새 PAT의 실제 설정·값을 조회하거나 새 PAT로 API·Git 인증 시험을 수행했다고 표시하지 않음.
-- 2026-10-11에 만료된 기존 PAT, 새 PAT의 사용자 발급 완료 확인, 실제 OAuth 인증 결과를 구분함.
+커밋 순서
+c94f465  사이트 설명 추가
+78cf9c8  설명 업데이트
+d8d4e82  개발자 목록 추가
+dddbd43  티셔츠, 기능 리스트 추가
+cf99f90  목록 문서 형식 정리
 
-검사 방법: native Git 명령과 파일 검사. 학교에서_확인.ps1은 실행하지 않았다.
-이 검증 과정에서 실행 정책·Git 전역 설정을 변경하지 않았으며 기존 저장소나 원격에 쓰지 않았다.
-
-결론: 게시된 학교용 r4 ZIP을 다시 내려받아도 두 실습 저장소의 파일·Git 이력·실행 기록·화면 증거와 최신 PAT 완료 기록이 보존된다.
+검사는 native Git 명령과 파일 확인으로 수행했다.
+기존 상세 기록과 화면 자료는 별도 백업에 보존한다.
