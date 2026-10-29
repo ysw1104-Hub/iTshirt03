@@ -2,7 +2,7 @@
 
 교재의 Git/GitHub 실습 파일, 커밋 이력, SourceTree GUI 조작 기록을 모은 저장소입니다.
 
-현재 Git·SourceTree GUI 실습과 VS Code 한국어·Light+ 적용은 완료했습니다. **교재의 PAT 직접 발급 절차는 OAuth 로그인과 별개이며, 사용자 발급 확인을 기다리고 있습니다.**
+현재 Git·SourceTree GUI 실습과 VS Code 한국어·Light+ 적용은 완료했습니다. **PAT도 기존 발급 사실을 사용자 제공 화면으로 확인했습니다(2026-10-30).** 해당 PAT는 2026-10-11에 만료되었고 사용 기록이 없으므로 현재 인증에 재사용할 수 없습니다. 이번 Git push와 SourceTree 연결은 별도로 완료한 OAuth 인증 결과입니다.
 
 ## 학교에서 완성된 결과 받기
 
