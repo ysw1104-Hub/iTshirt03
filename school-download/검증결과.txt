@@ -1,7 +1,11 @@
-학교용 패키지 r2 갱신
-기준 main: 787ebd63e28b2a44a5c9e335c11d1c9986a4864a
-한국어 메뉴 재시작 및 Light+ 적용 캡처 포함: 15 장
-검사: native Git·파일 읽기 전용 18/18, fsck 통과
-SHA256: 8c90bbd59df94eb7fa0d67c8d218ff979260a7658d8cf6722161babd5fab59fc
-PAT 발급 실습은 사용자 확인 대기이며 OAuth 완료와 구분하여 문서에 표기함.
-실제 게시 ZIP 재다운로드 검증은 다음 기록에서 확인.
+학교용 ZIP r2 실제 재다운로드 검증
+날짜: 2026-10-29
+다운로드: https://github.com/ysw1104-Hub/iTshirt03/raw/e00da4885dc0806275eea845094d8141dab2e303/school-download/SW-Git-Complete-20261029.zip
+SHA256: 8C90BBD59DF94EB7FA0D67C8D218FF979260A7658D8CF6722161BABD5FAB59FC
+게시 파일 해시 일치: 통과
+읽기 전용 native Git·파일 검사: 18/18 통과
+검사 스크립트 파일을 실행하거나 실행 정책을 변경하지 않았음.
+캡처: 15 장 (한국어·Light+ 실제 화면 14~15 포함)
+PAT 발급 실습은 사용자 발급 확인 대기이며 OAuth 완료와 별도로 표시되어 있음.
+iTshirt-cat: HEAD=787ebd63e28b2a44a5c9e335c11d1c9986a4864a, commits=7, clean=True, fsck=pass
+iTshirt-oct: HEAD=787ebd63e28b2a44a5c9e335c11d1c9986a4864a, commits=7, clean=True, fsck=pass
